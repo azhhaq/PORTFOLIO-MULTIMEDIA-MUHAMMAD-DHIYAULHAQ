@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Multimedia | Muhammad Dhiyaulhaq bin Noor Azharshah</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Animasi fade-in untuk hero */
+        .hero {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: fadeInUp 1s forwards;
+            animation-delay: 0.3s;
+        }
+
+        .hero h1 {
+            animation: fadeInUp 1s forwards;
+            animation-delay: 0.4s;
+        }
+
+        /* Animasi scale untuk gambar CV */
+        .cv-img {
+            opacity: 0;
+            transform: scale(0.8);
+            animation: fadeInScale 1s forwards;
+            animation-delay: 0.6s;
+        }
+
+        /* Hover effect butang */
+        .btn {
+            transition: all 0.3s ease;
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Slide-in untuk bahagian pengenalan */
+        .about {
+            opacity: 0;
+            transform: translateX(-50px);
+            animation: slideIn 1s forwards;
+            animation-delay: 0.9s;
+        }
+
+        /* Animasi keyframes */
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInScale {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigasi -->
+    <header>
+        <nav>
+            <h2 class="logo">Portfolio UUM</h2>
+            <ul>
+                <li><a href="index.html">Utama</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Bahagian Atas (Fold) -->
+    <section class="hero">
+        <h1>Portfolio Multimedia | Muhammad Dhiyaulhaq bin Noor Azharshah</h1>
+        <img src="images/cv-placeholder.png" alt="CV Infografik" class="cv-img">
+        <a href="files/CV_Dhiyaulhaq.pdf" class="btn" download>Muat Turun CV (PDF)</a>
+    </section>
+
+    <!-- Bahagian Pengenalan -->
+    <section class="about">
+        <img src="images/profile-placeholder.png" alt="Gambar Profil" class="profile-img">
+        <div class="intro">
+            <h2>Pengenalan Diri</h2>
+            <p>
+                Saya, <b>Muhammad Dhiyaulhaq bin Noor Azharshah</b>, merupakan seorang pelajar dalam bidang 
+                Teknologi Maklumat dengan minat mendalam terhadap pembangunan multimedia serta penyelesaian 
+                inovatif berasaskan teknologi. Portfolio ini menghimpunkan hasil kerja serta pengalaman saya 
+                dalam projek-projek akademik dan praktikal yang merangkumi grafik, video, dan pembangunan laman web. 
+                Melalui setiap projek, saya menekankan disiplin, ketepatan masa, dan kualiti hasil kerja untuk 
+                memenuhi keperluan akademik serta industri.
+            </p>
+            <a href="portfolio.html" class="btn">Lihat Projek Saya</a>
+        </div>
+    </section>
+</body>
+</html>
